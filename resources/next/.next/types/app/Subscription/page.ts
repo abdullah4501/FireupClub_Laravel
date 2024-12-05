@@ -1,4 +1,4 @@
-// File: C:\xampp\htdocs\fireupclub_laravel\resources\next\app\Subscription\page.js
+// File: C:\xampp\htdocs\FireupClub_Laravel\resources\next\app\Subscription\page.js
 import * as entry from '../../../../app/Subscription/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

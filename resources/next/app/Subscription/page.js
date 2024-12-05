@@ -83,17 +83,17 @@ const MultiStepForm = () => {
   };
   const onSubmit = async (data) => {
     try {
-      setLoading(true); // Show loading state while submitting
-      // Convert the 'skills' and 'specify_financial_goals' to a comma-separated string if they're arrays
+      setLoading(true); 
+  
       if (Array.isArray(data.specify_financial_goals)) {
-        data.specify_financial_goals = data.specify_financial_goals.map(option => option.value).join(',');
+        data.specify_financial_goals = data.specify_financial_goals.join(',');
       }
-
+  
       if (Array.isArray(data.skills)) {
-        data.skills = data.skills.map(option => option.value).join(',');
+        data.skills = data.skills.join(',');
       }
-
       const response = await axios.post("http://127.0.0.1:8000/api/subscription", data);
+  
       setTimeout(() => {
         setLoading(false);
         setStep(5);
@@ -104,9 +104,6 @@ const MultiStepForm = () => {
       alert("Failed to submit the form. Please try again.");
     }
   };
-  
-
-  
 
   const stepAnimation = {
     hidden: { opacity: 0, y: 50 },
@@ -131,7 +128,6 @@ const MultiStepForm = () => {
       }
     }
   };
-
 
   return (
     <section className="multiform-section">

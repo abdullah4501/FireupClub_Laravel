@@ -49,6 +49,7 @@ const page = () => {
                 </div>
               </div>
             </div>
+            
             <div className="col-lg-6">
               <div className="hero-image">
                 <img src="assets/img/hero/hero-1.png" alt="img" />
@@ -58,6 +59,83 @@ const page = () => {
           </div>
         </div>
       </section>
+      <section className="service-section fix pt-80 pb-80 section-bg">
+        <div className="container">
+          <h4
+            className="mb-5 text-white text-center wow fadeInUp"
+            data-wow-delay=".3s"
+          >
+            Preparing For Your Business Success With IT Solution
+          </h4>
+          <div className="row g-4">
+            <div
+              className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay=".3s"
+            >
+              <div className="service-items">
+                <div className="content">
+                  <p>01</p>
+                  <h5 className="text-black">
+                    <Link href="service-details">
+                    Personalized Support
+                    </Link>
+                  </h5>
+                  <Link className="arrow-btn" href="service-details">
+                    <i className="far fa-arrow-right" />
+                  </Link>
+                </div>
+                <div className="thumb">
+                  <img src="assets/img/financial-support.jpg" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay=".5s"
+            >
+              <div className="service-items">
+                <div className="content">
+                  <p>02</p>
+                  <h5 className="text-black">
+                    <Link href="service-details">
+                      Step-by-step <br />
+                      Guidance
+                    </Link>
+                  </h5>
+                  <Link className="arrow-btn" href="service-details">
+                    <i className="far fa-arrow-right" />
+                  </Link>
+                </div>
+                <div className="thumb">
+                  <img src="assets/img/step-by-step.jpg" alt="img" />
+                </div>
+              </div>
+            </div>
+            <div
+              className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
+              data-wow-delay=".7s"
+            >
+              <div className="service-items">
+                <div className="content">
+                  <p>03</p>
+                  <h5 className="text-black">
+                    <Link href="service-details">
+                      Exclusive Access
+                    </Link>
+                  </h5>
+                  <Link className="arrow-btn" href="service-details">
+                    <i className="far fa-arrow-right" />
+                  </Link>
+                </div>
+                <div className="thumb">
+                  <img src="assets/img/exclusive.jpg" alt="img" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
       {/* Service Offer Section Start */}
       <section className="service-offer-section" id="services">
         <div className="container">

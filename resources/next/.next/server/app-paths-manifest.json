@@ -1,4 +1,11 @@
 {
   "/page": "app/page.js",
-  "/Subscription/page": "app/Subscription/page.js"
+  "/service/page": "app/service/page.js",
+  "/index-two-page/page": "app/index-two-page/page.js",
+  "/index-four-page/page": "app/index-four-page/page.js",
+  "/index-six-page/page": "app/index-six-page/page.js",
+  "/news-details/page": "app/news-details/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/Subscription/page": "app/Subscription/page.js",
+  "/_not-found/page": "app/_not-found/page.js"
 }

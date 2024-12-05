@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\UserData;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Mail; // Import the Mail facade
+use App\Mail\UserDataSubmitted; // Create a Mailable class for the email
 
 class UserDataController extends Controller
 {
@@ -28,13 +30,17 @@ class UserDataController extends Controller
             'net_worth' => 'nullable|string|max:255',
             'retire_years' => 'nullable|integer|min:1',
         ]);
-    
+
         $userData = UserData::create($validatedData);
-        
+
+        // Send email to the user
+        if (!empty($validatedData['email'])) {
+            Mail::to($validatedData['email'])->send(new UserDataSubmitted($userData));
+        }
+
         return response()->json([
             'message' => 'Form submitted successfully!',
             'data' => $userData,
         ], 201);
-    }        
-    
+    }
 }
