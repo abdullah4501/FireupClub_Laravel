@@ -1,5 +1,5 @@
 {
-  "name": "free-nextadmin-nextjs",
+  "name": "next-react",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,33 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "apexcharts": "^3.45.2",
-    "flatpickr": "^4.6.13",
-    "jsvectormap": "^1.5.3",
-    "next": "^14.1.4",
-    "quill": "^2.0.2",
+    "axios": "^1.7.8",
+    "framer-motion": "^11.13.1",
+    "libphonenumber-js": "^1.11.15",
+    "next": "14.2.4",
     "react": "^18",
-    "react-apexcharts": "^1.4.1",
+    "react-bootstrap": "^1.6.1",
+    "react-countup": "^6.5.3",
     "react-dom": "^18",
-    "react-quill": "^2.0.0",
-    "react-select": "^5.8.0",
-    "react-table": "^7.8.0",
-    "sortablejs": "^1.15.3",
-    "react-tag-input": "^6.10.3",
-    "tailwind-scrollbar": "^3.1.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "@types/react-table": "^7.7.19",
-    "autoprefixer": "^10.0.1",
-    "eslint": "^8",
-    "eslint-config-next": "14.1.0",
-    "postcss": "^8",
-    "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.11",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "react-hook-form": "^7.53.2",
+    "react-phone-input-2": "^2.15.1",
+    "react-player": "^2.16.0",
+    "react-select": "^5.8.3",
+    "react-visibility-sensor": "^5.1.1",
+    "swiper": "^11.1.4",
+    "world-countries": "^5.0.0",
+    "wowjs": "^1.1.3"
   }
 }
